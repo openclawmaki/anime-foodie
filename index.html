@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime - Foodie List</title>
+    <style>
+        :root { --primary: #e67e22; --dark: #2c3e50; --light: #ecf0f1; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--light); color: var(--dark); margin: 0; padding: 20px; }
+        header { text-align: center; padding: 40px 0; }
+        h1 { margin: 0; color: var(--primary); font-size: 2.5em; }
+        .container { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); }
+        .card img { width: 100%; height: 200px; object-fit: cover; }
+        .content { padding: 20px; }
+        h2 { margin: 0 0 10px; font-size: 1.4em; }
+        .genres { margin-bottom: 15px; }
+        .genre-tag { background: #eee; border-radius: 20px; padding: 4px 12px; font-size: 0.8em; margin-right: 5px; display: inline-block; }
+        .argument { font-size: 0.9em; line-height: 1.5; color: #666; }
+        .category { font-weight: bold; color: var(--primary); font-size: 0.8em; text-transform: uppercase; display: block; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mis Animes de Cocina</h1>
+        <p>Directorio de series donde el ingrediente principal es la gastronomía.</p>
+    </header>
+    <div class="container">
+        <!-- Shokugeki no Soma -->
+        <div class="card">
+            <img src="https://images.alphacoders.com/605/605553.jpg" alt="Shokugeki no Soma">
+            <div class="content">
+                <span class="category">Restaurante / Competición</span>
+                <h2>Shokugeki no Soma</h2>
+                <div class="genres">
+                    <span class="genre-tag">Cocina</span>
+                    <span class="genre-tag">Shonen</span>
+                    <span class="genre-tag">Echhi</span>
+                    <span class="genre-tag">Comedia</span>
+                </div>
+                <p class="argument">Soma entra en la prestigiosa Academia Culinaria Totsuki, donde los estudiantes resuelven sus disputas en duelos de cocina extremos llamados Shokugeki.</p>
+            </div>
+        </div>
+
+        <!-- Isekai Izakaya -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/S/pv-target-images/9153a789396e4999f8f26017b209a304e29202167d6480f274a17ed4e5a9e._SX1080_FMjpg_.jpg" alt="Isekai Izakaya">
+            <div class="content">
+                <span class="category">Taberna / Isekai</span>
+                <h2>Isekai Izakaya: Koto Aitheria no居酒屋 Nobu</h2>
+                <div class="genres">
+                    <span class="genre-tag">Gastronomía</span>
+                    <span class="genre-tag">Fantasía</span>
+                    <span class="genre-tag">Seinen</span>
+                </div>
+                <p class="argument">Una taberna japonesa tradicional en Kioto tiene una puerta conectada a otro mundo, donde soldados y nobles descubren la comida japonesa.</p>
+            </div>
+        </div>
+
+        <!-- Amaama to Inazuma -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/S/pv-target-images/08263cf8271a4f0039f8164723825902167d6480f274a17ed4e5a9e._SX1080_FMjpg_.jpg" alt="Amaama to Inazuma">
+            <div class="content">
+                <span class="category">Cocina Casera / Familia</span>
+                <h2>Amaama to Inazuma</h2>
+                <div class="genres">
+                    <span class="genre-tag">Slice of Life</span>
+                    <span class="genre-tag">Cocina</span>
+                    <span class="genre-tag">Seinen</span>
+                </div>
+                <p class="argument">Un profesor viudo aprende a cocinar junto a su hija y una de sus alumnas para recuperar el placer de comer juntos en familia.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
