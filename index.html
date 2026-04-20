@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime - Foodie List</title>
     <style>
-        :root { --primary: #e67e22; --dark: #2c3e50; --light: #ecf0f1; }
+        :root { --primary: #e67e22; --dark: #2c3e50; --light: #ecf0f1; --accent: #2980b9; }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--light); color: var(--dark); margin: 0; padding: 20px; }
         header { text-align: center; padding: 40px 0; }
         h1 { margin: 0; color: var(--primary); font-size: 2.5em; }
         .container { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
-        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.2s; }
+        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.2s; display: flex; flex-direction: column; }
         .card:hover { transform: translateY(-5px); }
         .card img { width: 100%; height: 200px; object-fit: cover; }
-        .content { padding: 20px; }
+        .content { padding: 20px; flex-grow: 1; }
         h2 { margin: 0 0 10px; font-size: 1.4em; }
         .genres { margin-bottom: 15px; }
-        .genre-tag { background: #eee; border-radius: 20px; padding: 4px 12px; font-size: 0.8em; margin-right: 5px; display: inline-block; }
-        .argument { font-size: 0.9em; line-height: 1.5; color: #666; }
+        .genre-tag { background: #eee; border-radius: 20px; padding: 4px 12px; font-size: 0.8em; margin-right: 5px; display: inline-block; margin-bottom: 5px; }
+        .argument { font-size: 0.9em; line-height: 1.5; color: #666; margin-bottom: 15px; }
         .category { font-weight: bold; color: var(--primary); font-size: 0.8em; text-transform: uppercase; display: block; margin-bottom: 5px; }
+        .links { border-top: 1px solid #eee; padding: 15px 20px; display: flex; justify-content: space-between; background: #fafafa; }
+        .btn { text-decoration: none; font-size: 0.85em; font-weight: bold; color: var(--accent); }
+        .btn-jw { color: #e67e22; }
     </style>
 </head>
 <body>
@@ -36,10 +39,13 @@
                 <div class="genres">
                     <span class="genre-tag">Cocina</span>
                     <span class="genre-tag">Shonen</span>
-                    <span class="genre-tag">Echhi</span>
                     <span class="genre-tag">Comedia</span>
                 </div>
-                <p class="argument">Soma entra en la prestigiosa Academia Culinaria Totsuki, donde los estudiantes resuelven sus disputas en duelos de cocina extremos llamados Shokugeki.</p>
+                <p class="argument">Soma entra en la prestigiosa Academia Culinaria Totsuki, donde los estudiantes resuelven sus disputas en duelos culinarios extremos.</p>
+            </div>
+            <div class="links">
+                <a href="https://www.youtube.com/results?search_query=shokugeki+no+soma+trailer+español" target="_blank" class="btn">🎬 Tráiler</a>
+                <a href="https://www.justwatch.com/es/serie/food-wars-shokugeki-no-soma" target="_blank" class="btn btn-jw">📺 Dónde ver</a>
             </div>
         </div>
 
@@ -48,13 +54,17 @@
             <img src="https://m.media-amazon.com/images/S/pv-target-images/9153a789396e4999f8f26017b209a304e29202167d6480f274a17ed4e5a9e._SX1080_FMjpg_.jpg" alt="Isekai Izakaya">
             <div class="content">
                 <span class="category">Taberna / Isekai</span>
-                <h2>Isekai Izakaya: Koto Aitheria no居酒屋 Nobu</h2>
+                <h2>Isekai Izakaya Nobu</h2>
                 <div class="genres">
                     <span class="genre-tag">Gastronomía</span>
                     <span class="genre-tag">Fantasía</span>
                     <span class="genre-tag">Seinen</span>
                 </div>
-                <p class="argument">Una taberna japonesa tradicional en Kioto tiene una puerta conectada a otro mundo, donde soldados y nobles descubren la comida japonesa.</p>
+                <p class="argument">Una taberna japonesa tradicional en Kioto tiene una puerta conectada a otro mundo, donde soldados y nobles descubren el sabor de Japón.</p>
+            </div>
+            <div class="links">
+                <a href="https://www.youtube.com/results?search_query=isekai+izakaya+nobu+trailer" target="_blank" class="btn">🎬 Tráiler</a>
+                <a href="https://www.justwatch.com/es/serie/isekai-izakaya-japanese-food-from-another-world" target="_blank" class="btn btn-jw">📺 Dónde ver</a>
             </div>
         </div>
 
@@ -69,7 +79,49 @@
                     <span class="genre-tag">Cocina</span>
                     <span class="genre-tag">Seinen</span>
                 </div>
-                <p class="argument">Un profesor viudo aprende a cocinar junto a su hija y una de sus alumnas para recuperar el placer de comer juntos en familia.</p>
+                <p class="argument">Un profesor viudo aprende a cocinar junto a su hija y una alumna para recuperar el placer de comer juntos en familia.</p>
+            </div>
+            <div class="links">
+                <a href="https://www.youtube.com/results?search_query=amaama+to+inazuma+trailer" target="_blank" class="btn">🎬 Tráiler</a>
+                <a href="https://www.justwatch.com/es/serie/sweetness-and-lightning" target="_blank" class="btn btn-jw">📺 Dónde ver</a>
+            </div>
+        </div>
+
+        <!-- Ristorante Paradiso -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/S/pv-target-images/09214903767056902167d6480f274a17ed4e5a9e._SX1080_FMjpg_.jpg" alt="Ristorante Paradiso">
+            <div class="content">
+                <span class="category">Restaurante Italiano</span>
+                <h2>Ristorante Paradiso</h2>
+                <div class="genres">
+                    <span class="genre-tag">Josei</span>
+                    <span class="genre-tag">Romance</span>
+                    <span class="genre-tag">Gastronomía</span>
+                </div>
+                <p class="argument">Nicoletta viaja a Roma para visitar el restaurante de su madre, un lugar refinado atendido exclusivamente por caballeros maduros con gafas.</p>
+            </div>
+            <div class="links">
+                <a href="https://www.youtube.com/results?search_query=ristorante+paradiso+trailer" target="_blank" class="btn">🎬 Tráiler</a>
+                <a href="https://www.justwatch.com/es/serie/ristorante-paradiso" target="_blank" class="btn btn-jw">📺 Dónde ver</a>
+            </div>
+        </div>
+
+        <!-- Delicious in Dungeon -->
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/M/MV5BNmU5YzQzY2UtNjY2MC00ZDU0LTk2YjMtMDQ4NDk0MDRiZjRkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Delicious in Dungeon">
+            <div class="content">
+                <span class="category">Supervivencia / Monstruos</span>
+                <h2>Delicious in Dungeon</h2>
+                <div class="genres">
+                    <span class="genre-tag">Aventura</span>
+                    <span class="genre-tag">Comedia</span>
+                    <span class="genre-tag">Cocina</span>
+                </div>
+                <p class="argument">Un grupo de aventureros decide cocinar y comerse a los monstruos de la mazmorra para sobrevivir y rescatar a un miembro de su equipo.</p>
+            </div>
+            <div class="links">
+                <a href="https://www.youtube.com/results?search_query=delicious+in+dungeon+trailer" target="_blank" class="btn">🎬 Tráiler</a>
+                <a href="https://www.justwatch.com/es/serie/tragon-y-mazmorras" target="_blank" class="btn btn-jw">📺 Dónde ver</a>
             </div>
         </div>
     </div>
